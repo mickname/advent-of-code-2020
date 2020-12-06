@@ -21,7 +21,7 @@ def main():
         print(f"Usage: {sys.argv[0]} input.txt", file=sys.stderr)
         return
 
-    with open(sys.argv[1]) as f:
+    with open(fname) as f:
         passports = f.read().split('\n\n')
 
     num_valid = 0

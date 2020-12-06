@@ -9,7 +9,7 @@ def main():
         print(f"Usage: {sys.argv[0]} input.txt", file=sys.stderr)
         return
 
-    with open(sys.argv[1]) as f:
+    with open(fname) as f:
         width = len(f.readline().rstrip('\n'))
         f.seek(0)
         height = 0

@@ -11,7 +11,7 @@ def main():
 
     boarding_pass_found = (8 * 128) * [False]
 
-    with open(sys.argv[1]) as f:
+    with open(fname) as f:
         for line in f:
             row = int(line[0:7].replace('F', '0').replace('B', '1'), 2)
             col = int(line[7:10].replace('L', '0').replace('R', '1'), 2)

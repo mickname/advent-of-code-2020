@@ -10,7 +10,7 @@ def main():
         print(f"Usage: {sys.argv[0]} input.txt", file=sys.stderr)
         return
 
-    with open(sys.argv[1]) as f:
+    with open(fname) as f:
         # Lines are like "2-9 c: ccccccccc"
         iter_parsed = (
             re.fullmatch(r'(?P<pos1>\d+)-(?P<pos2>\d+) (?P<letter>.): (?P<password>.+)\n',
